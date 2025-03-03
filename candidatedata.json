@@ -1,0 +1,74 @@
+{
+    "name": "Sai Kireeti Chalamalasetty",
+    "tagline": "Generative AI Intern | MS in Computer Science",
+    "profile_picture": "assets/profile_picture/Saikireeti.jpg",
+    "resume_link": "assets/resume/SaiKireeti_Resume-2.pdf",
+    "about_me": "I am a detail-oriented Computer Science graduate student experience in software development, AI, and machine learning. I specialize in full-stack web development, 3D modeling, and predictive analytics. I am passionate about creating innovative, user-focused solutions and continuously advancing my skills to drive organizational growth and success.",
+    "skills": {
+        "Languages": ["C", "Python", "Java"],
+        "3D Modeling Tools": ["Meshy API"],
+        "Data Management": ["Data Tabulation", "Data Validation"],
+        "Tools": ["Quantum", "Jupyter Notebook", "Colab notebook", "Visual Studio Code"],
+        "Frontend Framework": ["HTML", "CSS", "ReactJS"],
+        "Backend Development": ["Node", "ExpressJS"],
+        "Version Control": ["GitHub"]
+    },
+    "projects": [
+        {
+            "name": "Meshy API Web APP",
+            "description": "Developed a Web app with Meshy API integration to generate exclusive 3D models.",
+            "technologies": ["3D Modeling", "API Integration", "ReactJS"],
+            "link": "https://github.com/sai-kireeti/Meshy-Image-to-3D-APP"
+        }
+    ],
+    "experience": [
+        {
+            "title": "Generative AI Intern",
+            "company": "Lidvizion",
+            "duration": "August 2024 – Present",
+            "responsibilities": [
+                "Generative AI Development: Designed and optimized AI models for 3D object generation, implementing deep learning algorithms, running experiments, and analyzing results to drive improvements.",
+                "Web Application Creation: Developed a seamless image-to-3D conversion tool using the Meshy API, featuring a React.js interface and efficient API handling with Node.js.",
+                "User-Friendly: Delivered modular, scalable, and user-centric code to ensure high usability and adaptability for future enhancements."
+            ]
+        },
+        {
+            "title": "Associate Analyst",
+            "company": "Merkle",
+            "duration": "July 2022 – June 2023",
+            "responsibilities": [
+                "Data Structuring and Cleaning: Organized survey data into categorized tables, cleaning raw datasets (.CSV, ASCII) to retain relevant information and ensure data accuracy for research analysis.",
+                "Survey Analysis: Analyzed single-choice, multi-choice, and open-ended responses, utilizing analytical tools to extract actionable insights and ensure alignment with study goals and assigned quotas.",
+                "Thematic Analysis and Reporting: Conducted thematic analysis of open-ended responses, identifying key patterns to support research conclusions and deliver structured, accurate reports."
+            ]
+        },
+        {
+            "title": "Web Developer Intern",
+            "company": "Techfest IIT Bombay",
+            "duration": "November 2021 – January 2022",
+            "responsibilities": [
+                "Web Design and Development: Designed and developed visually appealing web pages to showcase a diverse selection of furniture and kitchenware products, ensuring a seamless user experience.",
+                "Shopping Cart Functionality: Created a responsive and intuitive shopping cart page, enabling smooth product ordering and checkout processes.",
+                "Cross-Browser Compatibility and Testing: Ensured design consistency and functionality across multiple web pages, performing thorough testing and debugging to guarantee cross-browser compatibility and responsiveness."
+            ]
+        }
+    ],
+    "education": {
+        "degree": "MS in Computer Science",
+        "institution": "University of South Dakota",
+        "year": "August 2023 - May 2025"
+    },
+    "publications": [
+        {
+            "title": "Covid Alert System: A Smart Security System to Alert Violations of Covid Protocol Using OpenCV",
+            "authors": "P. Kiran Kumar, CH. Sai Kireeti, I. Durga Sindhu, B. Vidya Yasaswini, A. Dhana Satish",
+            "link": "https://link.springer.com/chapter/10.1007/978-3-030-95502-1_2"
+        }
+    ],
+    "contact": {
+        "email": "saikireetichalamalasetty@gmail.com",
+        "phone": "+16057401060",
+        "linkedin": "https://linkedin.com/in/kireetichalamalasetty",
+        "github": "https://github.com/sai-kireeti"
+    }
+}

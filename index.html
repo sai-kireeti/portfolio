@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Sai Kireeti</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="reveal">
+        <div class="hero">
+            <img id="profile-picture" alt="Profile Picture" class="profile-pic hover-rotate">
+            <h1 id="name" class="reveal"></h1>
+            <p id="tagline" class="reveal"></p>
+            <a id="resume" class="btn hover-lift" href="#" download>
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="sticky-nav">
+        <ul>
+            <li><a href="#about-me"><i class="fas fa-user"></i> About</a></li>
+            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
+            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
+            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
+            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+            <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
+            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- About Me Section -->
+        <section id="about-me" class="reveal">
+            <h2><i class="fas fa-user-circle icon-circle"></i>About Me</h2>
+            <p id="about"></p>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="reveal">
+            <h2><i class="fas fa-laptop-code icon-circle"></i>Skills</h2>
+            <div class="skills-container"></div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="reveal">
+            <h2><i class="fas fa-rocket icon-circle"></i>Projects</h2>
+            <div class="projects-container"></div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="reveal">
+            <h2><i class="fas fa-briefcase icon-circle"></i>Experience</h2>
+            <div class="experience-container">
+                <!-- Experience cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="reveal">
+            <h2><i class="fas fa-university icon-circle"></i>Education</h2>
+            <div id="education-container">
+                <!-- Education details will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Publications Section -->
+        <section id="publications" class="reveal">
+            <h2><i class="fas fa-book-open icon-circle"></i>Publications</h2>
+            <div class="publications-container">
+                <!-- Publication cards will be dynamically added here -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="reveal">
+            <h2><i class="fas fa-paper-plane icon-circle"></i>Contact Me</h2>
+            <div class="contact-links">
+                <a id="email" href="mailto:saikireetichalamalasetty@gmail.com" class="hover-lift">
+                    <img src="assets/icons/Gmail.png" alt="Email" class="contact-icon"> Email
+                </a>
+                <a id="phone" href="tel:+1234567890" class="hover-lift">
+                    <img src="assets/icons/phone.png" alt="Phone" class="contact-icon"> Phone
+                </a>
+                <a id="linkedin" href="https://www.linkedin.com/in/kireetichalamalasetty/" target="_blank" class="hover-lift">
+                    <img src="assets/icons/LinkedIn.png" alt="LinkedIn" class="contact-icon"> LinkedIn
+                </a>
+                <a id="github" href="https://github.com/sai-kireeti" target="_blank" class="hover-lift">
+                    <img src="assets/icons/Github.png" alt="GitHub" class="contact-icon"> GitHub
+                </a>
+            </div>
+            <form id="contact-form" class="reveal">
+                <input type="text" id="name-input" placeholder="Your Name" required>
+                <input type="email" id="email-input" placeholder="Your Email" required>
+                <textarea id="message-input" placeholder="Your Message" required></textarea>
+                <button type="submit" class="hover-lift">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2025 Sai Kireeti Chalamalasetty</p>
+        <button id="theme-toggle" class="hover-rotate">
+            <i class="fas fa-moon"></i>
+        </button>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        // Scroll reveal animation
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('.reveal').forEach((element) => {
+            observer.observe(element);
+        });
+
+        // Theme toggle icon update
+        const themeToggle = document.getElementById('theme-toggle');
+        const themeIcon = themeToggle.querySelector('i');
+        
+        themeToggle.addEventListener('click', () => {
+            themeIcon.classList.toggle('fa-moon');
+            themeIcon.classList.toggle('fa-sun');
+        });
+    </script>
+</body>
+</html>
