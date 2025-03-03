@@ -20,7 +20,15 @@ document.addEventListener("DOMContentLoaded", async () => {
         document.getElementById("name").textContent = data.name;
         document.getElementById("tagline").textContent = data.tagline;
         document.getElementById("profile-picture").src = data.profile_picture;
-        document.getElementById("resume").href = data.resume_link;
+        
+        // Update resume link
+        const resumeLink = document.getElementById("resume");
+        resumeLink.href = data.resume_link;
+        resumeLink.addEventListener('click', function(e) {
+            e.preventDefault();
+            window.open(data.resume_link, '_blank');
+        });
+        
         document.getElementById("about").textContent = data.about_me;
 
         // Clear existing content
