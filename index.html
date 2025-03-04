@@ -1,141 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio - Sai Kireeti</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Sai Kireeti Chalamalasetty</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header class="reveal">
-        <div class="hero">
-            <img id="profile-picture" alt="Profile Picture" class="profile-pic hover-rotate">
-            <h1 id="name" class="reveal"></h1>
-            <p id="tagline" class="reveal"></p>
-            <a id="resume" class="btn hover-lift" href="https://raw.githubusercontent.com/sai-kireeti/portfolio/master/assets/resume/SaiKireeti_Resume-2.pdf" target="_blank" rel="noopener noreferrer">
-                <i class="fas fa-download"></i> Download Resume
-            </a>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="nav-content">
+      <div class="nav-brand">SKC</div>
+      <div class="nav-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="theme-toggle">
+        <i class="fas fa-moon"></i>
+      </div>
+    </div>
+  </nav>
+
+  <header class="reveal">
+    <div class="hero">
+      <img id="profile-picture" alt="Profile Picture" class="profile-pic">
+      <h1 id="name"></h1>
+      <p id="tagline"></p>
+      <a id="resume-link" class="btn" href="" download>
+        <i class="fas fa-file-download"></i> Download Resume
+      </a>
+    </div>
+  </header>
+
+  <section id="about" class="reveal">
+    <h2><i class="fas fa-user-astronaut"></i> About Me</h2>
+    <p id="about-me"></p>
+  </section>
+
+  <section id="skills" class="reveal">
+    <h2><i class="fas fa-code-branch"></i> Skills</h2>
+    <div id="skills-list" class="skills-grid"></div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <h2><i class="fas fa-rocket"></i> Projects</h2>
+    <div id="projects-list" class="projects-grid"></div>
+  </section>
+
+  <section id="experience" class="reveal">
+    <h2><i class="fas fa-briefcase-medical"></i> Work Experience</h2>
+    <div id="experience-list" class="experience-timeline"></div>
+  </section>
+
+  <section id="education" class="reveal">
+    <h2><i class="fas fa-graduation-cap"></i> Education</h2>
+    <div id="education-details" class="education-card"></div>
+  </section>
+
+  <section id="publications" class="reveal">
+    <h2><i class="fas fa-book-reader"></i> Publications</h2>
+    <div id="publications-list" class="publications-grid"></div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <h2><i class="fas fa-paper-plane"></i> Contact Information</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-links">
+          <p><img src="assets/icons/Gmail.png" alt="Email" class="contact-icon"> Email: <a id="email" href="mailto:"></a></p>
+          <p><img src="assets/icons/phone.png" alt="Phone" class="contact-icon"> Phone: <span id="phone"></span></p>
+          <p><img src="assets/icons/LinkedIn.png" alt="LinkedIn" class="contact-icon"> LinkedIn: <a id="linkedin" href="" target="_blank">LinkedIn</a></p>
+          <p><img src="assets/icons/Github.png" alt="GitHub" class="contact-icon"> GitHub: <a id="github" href="" target="_blank">GitHub</a></p>
         </div>
-    </header>
+      </div>
+      <div class="contact-form">
+        <h3>Send me a message</h3>
+        <form id="contact-form">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" required>
+            <i class="fas fa-user input-icon"></i>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required>
+            <div class="error-message"></div>
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" required></textarea>
+            <div class="error-message"></div>
+          </div>
+          <button type="submit" class="btn">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
 
-    <!-- Navigation -->
-    <nav class="sticky-nav">
-        <ul>
-            <li><a href="#about-me"><i class="fas fa-user"></i> About</a></li>
-            <li><a href="#skills"><i class="fas fa-code"></i> Skills</a></li>
-            <li><a href="#projects"><i class="fas fa-project-diagram"></i> Projects</a></li>
-            <li><a href="#experience"><i class="fas fa-briefcase"></i> Experience</a></li>
-            <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
-            <li><a href="#publications"><i class="fas fa-book"></i> Publications</a></li>
-            <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-        </ul>
-    </nav>
-
-    <!-- Main Content -->
-    <main>
-        <!-- About Me Section -->
-        <section id="about-me" class="reveal">
-            <h2><i class="fas fa-user-circle icon-circle"></i>About Me</h2>
-            <p id="about"></p>
-        </section>
-
-        <!-- Skills Section -->
-        <section id="skills" class="reveal">
-            <h2><i class="fas fa-laptop-code icon-circle"></i>Skills</h2>
-            <div class="skills-container"></div>
-        </section>
-
-        <!-- Projects Section -->
-        <section id="projects" class="reveal">
-            <h2><i class="fas fa-rocket icon-circle"></i>Projects</h2>
-            <div class="projects-container"></div>
-        </section>
-
-        <!-- Experience Section -->
-        <section id="experience" class="reveal">
-            <h2><i class="fas fa-briefcase icon-circle"></i>Experience</h2>
-            <div class="experience-container">
-                <!-- Experience cards will be dynamically added here -->
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section id="education" class="reveal">
-            <h2><i class="fas fa-university icon-circle"></i>Education</h2>
-            <div id="education-container">
-                <!-- Education details will be dynamically added here -->
-            </div>
-        </section>
-
-        <!-- Publications Section -->
-        <section id="publications" class="reveal">
-            <h2><i class="fas fa-book-open icon-circle"></i>Publications</h2>
-            <div class="publications-container">
-                <!-- Publication cards will be dynamically added here -->
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" class="reveal">
-            <h2><i class="fas fa-paper-plane icon-circle"></i>Contact Me</h2>
-            <div class="contact-links">
-                <a id="email" href="mailto:saikireetichalamalasetty@gmail.com" class="hover-lift">
-                    <img src="assets/icons/Gmail.png" alt="Email" class="contact-icon"> Email
-                </a>
-                <a id="phone" href="tel:+1234567890" class="hover-lift">
-                    <img src="assets/icons/phone.png" alt="Phone" class="contact-icon"> Phone
-                </a>
-                <a id="linkedin" href="https://www.linkedin.com/in/kireetichalamalasetty/" target="_blank" class="hover-lift">
-                    <img src="assets/icons/LinkedIn.png" alt="LinkedIn" class="contact-icon"> LinkedIn
-                </a>
-                <a id="github" href="https://github.com/sai-kireeti" target="_blank" class="hover-lift">
-                    <img src="assets/icons/Github.png" alt="GitHub" class="contact-icon"> GitHub
-                </a>
-            </div>
-            <form id="contact-form" class="reveal">
-                <input type="text" id="name-input" placeholder="Your Name" required>
-                <input type="email" id="email-input" placeholder="Your Email" required>
-                <textarea id="message-input" placeholder="Your Message" required></textarea>
-                <button type="submit" class="hover-lift">
-                    <i class="fas fa-paper-plane"></i> Send Message
-                </button>
-            </form>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2025 Sai Kireeti Chalamalasetty</p>
-        <button id="theme-toggle" class="hover-rotate">
-            <i class="fas fa-moon"></i>
-        </button>
-    </footer>
-
-    <script src="script.js"></script>
-    <script>
-        // Scroll reveal animation
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('active');
-                }
-            });
-        }, { threshold: 0.1 });
-
-        document.querySelectorAll('.reveal').forEach((element) => {
-            observer.observe(element);
-        });
-
-        // Theme toggle icon update
-        const themeToggle = document.getElementById('theme-toggle');
-        const themeIcon = themeToggle.querySelector('i');
-        
-        themeToggle.addEventListener('click', () => {
-            themeIcon.classList.toggle('fa-moon');
-            themeIcon.classList.toggle('fa-sun');
-        });
-    </script>
+  <script src="script.js"></script>
 </body>
 </html>

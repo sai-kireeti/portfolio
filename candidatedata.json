@@ -1,8 +1,8 @@
 {
     "name": "Sai Kireeti Chalamalasetty",
     "tagline": "Generative AI Intern | MS in Computer Science",
-    "profile_picture": "assets/profile_picture/Saikireeti.jpg",
-    "resume_link": "assets/resume/SaiKireeti_Resume-2.pdf",
+    "profile_picture": "./assets/profile_picture/Saikireeti.jpg",
+    "resume_link": "https://raw.githubusercontent.com/sai-kireeti/Resume/main/SaiKireeti_Resume-2.pdf",
     "about_me": "I am a detail-oriented Computer Science graduate student experience in software development, AI, and machine learning. I specialize in full-stack web development, 3D modeling, and predictive analytics. I am passionate about creating innovative, user-focused solutions and continuously advancing my skills to drive organizational growth and success.",
     "skills": {
         "Languages": ["C", "Python", "Java"],
